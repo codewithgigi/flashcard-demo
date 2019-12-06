@@ -41,7 +41,7 @@ const SideNav = styled.div`
 `
 
 const Flashcards = () => {
-  const [searchId, setSearchId] = useState()
+  const [search, setSearch] = useState()
 
   const { state, dispatch } = useContext(Context)
   const { data, loading, error } = useQuery(GET_FLASHCARDS)
@@ -58,6 +58,8 @@ const Flashcards = () => {
   if (loading) return <div>Loading ...</div>
   if (error) return <p>Error :(</p>
 
+  console.log(data)
+
   return (
     <Container>
       <SideNav>
@@ -66,12 +68,12 @@ const Flashcards = () => {
       <Content>
         <AddFlashcard />
         <Search
-          searchTerm={searchId}
+          searchTerm={search}
           placeholder={'enter flashcard id'}
-          setSearch={setSearchId}
+          setSearch={setSearch}
         />
 
-        {searchId && <h4>Search Results</h4>}
+        {search && <h4>Search Results</h4>}
         {state && state.flashcards.length <= 0 && (
           <div>There are no existing flashcards</div>
         )}

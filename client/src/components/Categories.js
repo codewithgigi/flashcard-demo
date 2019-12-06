@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { grey } from '@material-ui/core/colors'
 
 const Container = styled.div`
   background-color: white;

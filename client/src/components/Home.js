@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import Categories from './Categories'
 import Flashcards from './Flashcards'
 
 import styled from 'styled-components'
@@ -16,7 +15,7 @@ export default () => {
   return (
     <React.Fragment>
       <Header />
-      <PageHeading>Jokes by Category</PageHeading>
+      <PageHeading>Flashcard Demo</PageHeading>
       <Flashcards />
       <Footer />
     </React.Fragment>
