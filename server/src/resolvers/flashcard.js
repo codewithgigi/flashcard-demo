@@ -37,5 +37,12 @@ export default {
         return error
       }
     },
+    deleteFlashcard: async (parent, { flashcardId }, { models }) => {
+      try {
+        return await models.Flashcard.delete(flashcardId)
+      } catch (error) {
+        return error
+      }
+    },
   },
 }

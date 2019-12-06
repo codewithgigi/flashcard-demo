@@ -9,3 +9,8 @@ export const CREATE_FLASHCARD = gql`
   }
   ${FlashcardFragments.flashcard}
 `
+export const DELETE_FLASHCARD = gql`
+  mutation deleteFlashcard($flashcardId: ID!) {
+    deleteFlashcard(flashcardI: $flashcardId)
+  }
+`

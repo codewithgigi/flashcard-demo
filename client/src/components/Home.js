@@ -17,7 +17,6 @@ export default () => {
       <Header />
       <PageHeading>Flashcard Demo</PageHeading>
       <Flashcards />
-      <Footer />
     </React.Fragment>
   )
 }

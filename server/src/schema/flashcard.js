@@ -7,6 +7,7 @@ export default gql`
   }
   extend type Mutation {
     createFlashcard(flashcardInput: flashcardInput!): Flashcard
+    deleteFlashcard(flashcardI: ID!): Boolean
   }
 
   input flashcardInput {
