@@ -67,8 +67,8 @@ const Flashcard = ({ flashcard }) => {
           <p>{flashcard.back}</p>
         </Card>
       </CardWrapper>
-      <Button>Delete</Button>
-      <Button primary>Edit</Button>
+      {/* <Button>Delete</Button>
+      <Button primary>Edit</Button> */}
     </div>
   )
 }
