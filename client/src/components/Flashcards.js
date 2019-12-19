@@ -57,31 +57,39 @@ const Flashcards = () => {
 
   if (loading) return <div>Loading ...</div>
   if (error) return <p>Error :(</p>
+  const { flashcards } = state || []
 
-  console.log(data)
+  const word = search ? new RegExp(search.toLowerCase()) : ''
+  const flashcardlist = search
+    ? flashcards.filter(card => {
+        return (
+          word.test(card.front.toLowerCase()) ||
+          word.test(card.back.toLowerCase())
+        )
+      })
+    : flashcards
 
   return (
     <Container>
-      {/* <SideNav>
+      <SideNav>
         <Categories />
-      </SideNav> */}
+      </SideNav>
       <Content>
         <AddFlashcard />
         <Search
           searchTerm={search}
-          placeholder={'enter flashcard id'}
+          placeholder={'Enter flashcard search term'}
           setSearch={setSearch}
         />
 
         {search && <h4>Search Results</h4>}
-        {state && state.flashcards.length <= 0 && (
+        {flashcardlist && flashcardlist.length <= 0 && (
           <div>There are no existing flashcards</div>
         )}
 
         <FlashCardsContainer>
-          {state &&
-            state.flashcards &&
-            state.flashcards.map(row => (
+          {flashcardlist &&
+            flashcardlist.map(row => (
               <Flashcard key={row._id} flashcard={row} />
             ))}
         </FlashCardsContainer>
