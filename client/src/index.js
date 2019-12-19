@@ -10,7 +10,6 @@ import { ApolloLink } from 'apollo-link'
 //import { ApolloLink } from 'apollo-client-preset'
 import App from './app/index'
 
-console.log(process.env.REACT_APP_GRAPHQL_API)
 const httpLink = new HttpLink({
   uri: process.env.REACT_APP_GRAPHQL_API,
 })

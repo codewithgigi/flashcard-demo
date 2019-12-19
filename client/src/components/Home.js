@@ -17,7 +17,7 @@ export default () => {
       <Header />
       <PageHeading>
         Flashcard Demo (Grahpql/apollo, React, React Hooks, apollo
-        hooks, styled components )
+        hooks, styled components and Material UI )
       </PageHeading>
       <Flashcards />
     </React.Fragment>

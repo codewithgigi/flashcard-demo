@@ -11,8 +11,7 @@ export const Input = styled.input`
   }
 `
 
-export const Button = styled.button`
-    width: 25%;
+export const StyledButton = styled.button`
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;

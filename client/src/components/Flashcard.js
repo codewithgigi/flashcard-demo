@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { CREATE_FLASHCARD } from '../gql/mutations'
-import { useMutation } from '@apollo/react-hooks'
 
 const Card = styled.div`
   display: flex;

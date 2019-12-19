@@ -4,12 +4,12 @@ import {
   DialogActions,
   DialogContent,
   DialogTitle,
+  Button,
 } from '@material-ui/core'
-import { Input, Button } from '../styled/styledComponents'
+import { Input, StyledButton } from '../styled/styledComponents'
 import { CREATE_FLASHCARD } from '../gql/mutations'
 import Context from '../context'
 import { useMutation } from '@apollo/react-hooks'
-import '../styled/styledComponents.js'
 
 const AddFlashcard = () => {
   const [open, setOpen] = useState(false)
@@ -64,11 +64,7 @@ const AddFlashcard = () => {
 
   return (
     <div>
-      <Button
-        color="primary"
-        variant="contained"
-        onClick={() => setOpen(!open)}
-      >
+      <Button color="primary" onClick={() => setOpen(!open)}>
         Add Flashcard
       </Button>
       <Dialog fullWidth open={open} onClose={handleClose}>
@@ -106,15 +102,15 @@ const AddFlashcard = () => {
           />
         </DialogContent>
         <DialogActions>
-          <Button
+          <StyledButton
             onClick={handleClose}
             style={{ backgroundColor: 'red' }}
           >
             Cancel
-          </Button>
-          <Button onClick={onSubmit} color="primary">
+          </StyledButton>
+          <StyledButton onClick={onSubmit} color="primary">
             Save
-          </Button>
+          </StyledButton>
         </DialogActions>
       </Dialog>
     </div>
