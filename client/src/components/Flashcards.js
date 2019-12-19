@@ -62,9 +62,9 @@ const Flashcards = () => {
 
   return (
     <Container>
-      <SideNav>
+      {/* <SideNav>
         <Categories />
-      </SideNav>
+      </SideNav> */}
       <Content>
         <AddFlashcard />
         <Search
