@@ -15,7 +15,10 @@ export default () => {
   return (
     <React.Fragment>
       <Header />
-      <PageHeading>Flashcard Demo</PageHeading>
+      <PageHeading>
+        Flashcard Demo (Grahpql/apollo, React, React Hooks, apollo
+        hooks, styled components )
+      </PageHeading>
       <Flashcards />
     </React.Fragment>
   )

@@ -24,8 +24,8 @@ function Header() {
     <Container>
       <ul>
         <h5 style={{ color: 'grey' }}>Categories</h5>
-        <List>Programming Jokes</List>
-        <List>Make Flashcards Fun</List>
+        <List>Category 1</List>
+        <List>Category 2</List>
       </ul>
     </Container>
   )
