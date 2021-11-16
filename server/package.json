@@ -34,7 +34,7 @@
     "apollo-server": "^2.2.3",
     "apollo-server-express": "^2.2.3",
     "apollo-server-memcached": "0.1.0-rc.10",
-    "aws-sdk": "^2.546.0",
+    "aws-sdk": "^2.814.0",
     "bcrypt": "^3.0.2",
     "cors": "^2.8.5",
     "dataloader": "^1.4.0",
