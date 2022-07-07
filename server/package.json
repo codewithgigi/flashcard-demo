@@ -48,7 +48,7 @@
     "jsonwebtoken": "^8.4.0",
     "lodash": "^4.17.15",
     "meteor-apollo-accounts": "^2.0.3",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mongoose": "^5.4.13",
     "uuid": "^3.3.2",
     "validator": "^10.9.0"
